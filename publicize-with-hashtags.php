@@ -2,7 +2,7 @@
 /*
 Plugin Name: Publicize With Hashtags
 Description: Automatically append hashtags to any content sent by Jetpack's Publicize module: hashtags will be created using post tags: dupe check and an optional length-based threshold are also included.
-Version: 0.1.1
+Version: 0.1.2
 License: GPL
 Author: Darkseal
 Author URI: http://www.ryadel.com/
@@ -48,7 +48,7 @@ function publicize_with_hashtags() {
 	// Create list of tags with hashtags in front of them until threshold is reached
 	foreach ($ta as $t) {
         // Create the hashtag, stripping spaces if needed.
-		$ht = '#' . ($strip_spaces) ? str_replace(' ', '', $t->name) : $t->name;
+		$ht = '#' . (($strip_spaces) ? str_replace(' ', '', $t->name) : $t->name);
 		// only process newly-added hashtags, skipping duplicate ones
 		if (stripos($mess,$ht) === false) {	
 			if (!empty($mess_max_length) && $mess_max_length <= (strlen($mess) + strlen($ht))) break;

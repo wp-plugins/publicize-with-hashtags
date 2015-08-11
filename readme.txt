@@ -49,6 +49,9 @@ It won't be added again, as long as it's case-insensitive equal to the first one
 
 == Changelog ==
 
+= 0.1.2 =
+* Fixed a bug in hashtags generation
+
 = 0.1.1 =
 * Added an explicative screenshot
 * Added some Frequently Asked Questions
@@ -58,6 +61,9 @@ It won't be added again, as long as it's case-insensitive equal to the first one
 * First release.
 
 == Upgrade Notice ==
+
+= 0.1.2 =
+* Fixed a major bug
 
 = 0.1.1 =
 * Screenshot added
